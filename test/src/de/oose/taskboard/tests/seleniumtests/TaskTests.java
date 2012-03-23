@@ -49,8 +49,9 @@ public class TaskTests implements SeleniumTest {
 		WebElement saveButton = driver.findElement(By.cssSelector("button.gwt-Button"));
 		assertThat(saveButton,notNullValue());
 		LOGGER.debug("Saving the new Task");
-		
-		
+		saveButton.click();
+
+		//TODO wait for the window to refresh and ensure that we find the texts
 	}
 
 }
